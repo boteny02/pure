@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
+class ComposerStaticInit9f41ccc4991bb9d1bc5cb067426dca6e
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -16,10 +16,10 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
-        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
-        'e23faeee409e941dc9b4c80386209c39' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
+        'e23faeee409e941dc9b4c80386209c39' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
@@ -44,6 +44,7 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         ),
         'T' => 
         array (
+            'Traitor\\' => 8,
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
             'Tests\\' => 6,
         ),
@@ -100,6 +101,7 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         array (
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
+            'Laratrust\\' => 10,
         ),
         'J' => 
         array (
@@ -165,6 +167,10 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Traitor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kkszymanowski/traitor/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -305,6 +311,10 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
+        ),
+        'Laratrust\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/santigarcor/laratrust/src',
         ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
@@ -455,6 +465,7 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\JournalsController' => __DIR__ . '/../..' . '/app/Http/Controllers/JournalsController.php',
         'App\\Http\\Controllers\\ThesisprojectsController' => __DIR__ . '/../..' . '/app/Http/Controllers/ThesisprojectsController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Controllers\\VideosController' => __DIR__ . '/../..' . '/app/Http/Controllers/VideosController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -464,32 +475,42 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\CreateBookRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateBookRequest.php',
         'App\\Http\\Requests\\CreateBooksRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateBooksRequest.php',
         'App\\Http\\Requests\\CreateConferencesRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateConferencesRequest.php',
         'App\\Http\\Requests\\CreateJournalsRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateJournalsRequest.php',
         'App\\Http\\Requests\\CreateThesisprojectsRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateThesisprojectsRequest.php',
+        'App\\Http\\Requests\\CreateUserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateUserRequest.php',
         'App\\Http\\Requests\\CreateVideosRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateVideosRequest.php',
+        'App\\Http\\Requests\\UpdateBookRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateBookRequest.php',
         'App\\Http\\Requests\\UpdateBooksRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateBooksRequest.php',
         'App\\Http\\Requests\\UpdateConferencesRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateConferencesRequest.php',
         'App\\Http\\Requests\\UpdateJournalsRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateJournalsRequest.php',
         'App\\Http\\Requests\\UpdateThesisprojectsRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateThesisprojectsRequest.php',
+        'App\\Http\\Requests\\UpdateUserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateUserRequest.php',
         'App\\Http\\Requests\\UpdateVideosRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateVideosRequest.php',
+        'App\\Models\\Book' => __DIR__ . '/../..' . '/app/Models/Book.php',
         'App\\Models\\Books' => __DIR__ . '/../..' . '/app/Models/Books.php',
         'App\\Models\\Conferences' => __DIR__ . '/../..' . '/app/Models/Conferences.php',
         'App\\Models\\Journals' => __DIR__ . '/../..' . '/app/Models/Journals.php',
         'App\\Models\\Thesisprojects' => __DIR__ . '/../..' . '/app/Models/Thesisprojects.php',
+        'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\Videos' => __DIR__ . '/../..' . '/app/Models/Videos.php',
+        'App\\Permission' => __DIR__ . '/../..' . '/app/Permission.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Repositories\\BaseRepository' => __DIR__ . '/../..' . '/app/Repositories/BaseRepository.php',
+        'App\\Repositories\\BookRepository' => __DIR__ . '/../..' . '/app/Repositories/BookRepository.php',
         'App\\Repositories\\BooksRepository' => __DIR__ . '/../..' . '/app/Repositories/BooksRepository.php',
         'App\\Repositories\\ConferencesRepository' => __DIR__ . '/../..' . '/app/Repositories/ConferencesRepository.php',
         'App\\Repositories\\JournalsRepository' => __DIR__ . '/../..' . '/app/Repositories/JournalsRepository.php',
         'App\\Repositories\\ThesisprojectsRepository' => __DIR__ . '/../..' . '/app/Repositories/ThesisprojectsRepository.php',
+        'App\\Repositories\\UserRepository' => __DIR__ . '/../..' . '/app/Repositories/UserRepository.php',
         'App\\Repositories\\VideosRepository' => __DIR__ . '/../..' . '/app/Repositories/VideosRepository.php',
+        'App\\Role' => __DIR__ . '/../..' . '/app/Role.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
@@ -939,10 +960,6 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         'Egulias\\EmailValidator\\Warning\\LocalTooLong' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/LocalTooLong.php',
         'Egulias\\EmailValidator\\Warning\\NoDNSMXRecord' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/NoDNSMXRecord.php',
         'Egulias\\EmailValidator\\Warning\\ObsoleteDTEXT' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/ObsoleteDTEXT.php',
-        'Egulias\\EmailValidator\\Warning\\QuotedPart' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/QuotedPart.php',
-        'Egulias\\EmailValidator\\Warning\\QuotedString' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/QuotedString.php',
-        'Egulias\\EmailValidator\\Warning\\TLD' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/TLD.php',
-        'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/Warning.php',
         'Facade\\FlareClient\\Api' => __DIR__ . '/..' . '/facade/flare-client-php/src/Api.php',
         'Facade\\FlareClient\\Concerns\\HasContext' => __DIR__ . '/..' . '/facade/flare-client-php/src/Concerns/HasContext.php',
         'Facade\\FlareClient\\Concerns\\UsesTime' => __DIR__ . '/..' . '/facade/flare-client-php/src/Concerns/UsesTime.php',
@@ -2490,6 +2507,47 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         'Laracasts\\Flash\\Message' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/Message.php',
         'Laracasts\\Flash\\OverlayMessage' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/OverlayMessage.php',
         'Laracasts\\Flash\\SessionStore' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/SessionStore.php',
+        'LaratrustSeeder' => __DIR__ . '/../..' . '/database/seeds/LaratrustSeeder.php',
+        'Laratrust\\Checkers\\LaratrustCheckerManager' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/LaratrustCheckerManager.php',
+        'Laratrust\\Checkers\\Role\\LaratrustRoleChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/Role/LaratrustRoleChecker.php',
+        'Laratrust\\Checkers\\Role\\LaratrustRoleDefaultChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/Role/LaratrustRoleDefaultChecker.php',
+        'Laratrust\\Checkers\\Role\\LaratrustRoleQueryChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/Role/LaratrustRoleQueryChecker.php',
+        'Laratrust\\Checkers\\User\\LaratrustUserChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/User/LaratrustUserChecker.php',
+        'Laratrust\\Checkers\\User\\LaratrustUserDefaultChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/User/LaratrustUserDefaultChecker.php',
+        'Laratrust\\Checkers\\User\\LaratrustUserQueryChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/User/LaratrustUserQueryChecker.php',
+        'Laratrust\\Commands\\AddLaratrustUserTraitUseCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Commands/AddLaratrustUserTraitUseCommand.php',
+        'Laratrust\\Commands\\MakePermissionCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Commands/MakePermissionCommand.php',
+        'Laratrust\\Commands\\MakeRoleCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Commands/MakeRoleCommand.php',
+        'Laratrust\\Commands\\MakeSeederCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Commands/MakeSeederCommand.php',
+        'Laratrust\\Commands\\MakeTeamCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Commands/MakeTeamCommand.php',
+        'Laratrust\\Commands\\MigrationCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Commands/MigrationCommand.php',
+        'Laratrust\\Commands\\SetupCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Commands/SetupCommand.php',
+        'Laratrust\\Commands\\SetupTeamsCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Commands/SetupTeamsCommand.php',
+        'Laratrust\\Commands\\UpgradeCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Commands/UpgradeCommand.php',
+        'Laratrust\\Contracts\\LaratrustPermissionInterface' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Contracts/LaratrustPermissionInterface.php',
+        'Laratrust\\Contracts\\LaratrustRoleInterface' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Contracts/LaratrustRoleInterface.php',
+        'Laratrust\\Contracts\\LaratrustTeamInterface' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Contracts/LaratrustTeamInterface.php',
+        'Laratrust\\Contracts\\LaratrustUserInterface' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Contracts/LaratrustUserInterface.php',
+        'Laratrust\\Contracts\\Ownable' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Contracts/Ownable.php',
+        'Laratrust\\Helper' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Helper.php',
+        'Laratrust\\Laratrust' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Laratrust.php',
+        'Laratrust\\LaratrustFacade' => __DIR__ . '/..' . '/santigarcor/laratrust/src/LaratrustFacade.php',
+        'Laratrust\\LaratrustRegistersBladeDirectives' => __DIR__ . '/..' . '/santigarcor/laratrust/src/LaratrustRegistersBladeDirectives.php',
+        'Laratrust\\LaratrustServiceProvider' => __DIR__ . '/..' . '/santigarcor/laratrust/src/LaratrustServiceProvider.php',
+        'Laratrust\\Middleware\\LaratrustAbility' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Middleware/LaratrustAbility.php',
+        'Laratrust\\Middleware\\LaratrustMiddleware' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Middleware/LaratrustMiddleware.php',
+        'Laratrust\\Middleware\\LaratrustPermission' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Middleware/LaratrustPermission.php',
+        'Laratrust\\Middleware\\LaratrustRole' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Middleware/LaratrustRole.php',
+        'Laratrust\\Models\\LaratrustPermission' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Models/LaratrustPermission.php',
+        'Laratrust\\Models\\LaratrustRole' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Models/LaratrustRole.php',
+        'Laratrust\\Models\\LaratrustTeam' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Models/LaratrustTeam.php',
+        'Laratrust\\Traits\\LaratrustDynamicUserRelationsCalls' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustDynamicUserRelationsCalls.php',
+        'Laratrust\\Traits\\LaratrustHasEvents' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustHasEvents.php',
+        'Laratrust\\Traits\\LaratrustHasScopes' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustHasScopes.php',
+        'Laratrust\\Traits\\LaratrustPermissionTrait' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustPermissionTrait.php',
+        'Laratrust\\Traits\\LaratrustRoleTrait' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustRoleTrait.php',
+        'Laratrust\\Traits\\LaratrustTeamTrait' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustTeamTrait.php',
+        'Laratrust\\Traits\\LaratrustUserTrait' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustUserTrait.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -3736,6 +3794,7 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         'Ramsey\\Uuid\\UuidFactory' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactory.php',
         'Ramsey\\Uuid\\UuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactoryInterface.php',
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
+        'RolesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/RolesTableSeeder.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -4551,6 +4610,11 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'Traitor\\Handlers\\AbstractTreeHandler' => __DIR__ . '/..' . '/kkszymanowski/traitor/src/Handlers/AbstractTreeHandler.php',
+        'Traitor\\Handlers\\Handler' => __DIR__ . '/..' . '/kkszymanowski/traitor/src/Handlers/Handler.php',
+        'Traitor\\TraitUseAdder' => __DIR__ . '/..' . '/kkszymanowski/traitor/src/TraitUseAdder.php',
+        'Traitor\\Traitor' => __DIR__ . '/..' . '/kkszymanowski/traitor/src/Traitor.php',
+        'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',
@@ -4646,10 +4710,10 @@ class ComposerStaticInit8ebce65d481ca48498530d9ad856ccca
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8ebce65d481ca48498530d9ad856ccca::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8ebce65d481ca48498530d9ad856ccca::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit8ebce65d481ca48498530d9ad856ccca::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit8ebce65d481ca48498530d9ad856ccca::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit9f41ccc4991bb9d1bc5cb067426dca6e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit9f41ccc4991bb9d1bc5cb067426dca6e::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit9f41ccc4991bb9d1bc5cb067426dca6e::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit9f41ccc4991bb9d1bc5cb067426dca6e::$classMap;
 
         }, null, ClassLoader::class);
     }
